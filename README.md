@@ -1,4 +1,4 @@
-# Vision Transformer Probing 
+# Vision Transformer Probing (ICLR 2026 CAO Workshop)
 [![arXiv](https://img.shields.io/badge/arXiv-TBD-b31b1b.svg)](https://arxiv.org/abs/TBD)
 [![Dataset](https://img.shields.io/badge/🤗%20Hugging%20Face-Paper-yellow)](https://huggingface.co/papers/TBD)
 [![OpenReview](https://img.shields.io/badge/OpenReview-Forum-8C1515.svg)](https://openreview.net/forum?id=4lT3aScsRJ)
@@ -6,7 +6,6 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
 Official implementation of  [Layer by layer, module by module: Choose both for optimal OOD probing of ViT](https://arxiv.org/pdf/TBD). <br>
-**Accepted at ICLR 2026 CAO Workshop**<br>
 **Goal**: Analyze the linear probing of hidden representations across modules and layers in vision transformers. <br>
 **Layer by layer**: In ID settings, final layers always yield better performance than intermediate layers. <br>
 **Module by module**: In OOD settings, probing inputs and activations of intermediate feedforwards is better. <br>
