@@ -5,7 +5,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
-Official implementation of  [Layer by layer, module by module: Choose both for optimal OOD probing of ViT](https://arxiv.org/pdf/TBD) (ICLR 2026 CAO Workshop). <br>
+Official implementation of  [Layer by layer, module by module: Choose both for optimal OOD probing of ViT](https://arxiv.org/pdf/TBD). <br>
+**Accepted at ICLR 2026 CAO Workshop**<br>
 **Goal**: Analyze the linear probing of hidden representations across modules and layers in vision transformers. <br>
 **Layer by layer**: In ID settings, final layers always yield better performance than intermediate layers. <br>
 **Module by module**: In OOD settings, probing inputs and activations of intermediate feedforwards is better. <br>
