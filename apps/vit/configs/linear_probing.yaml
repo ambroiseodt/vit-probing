@@ -1,0 +1,19 @@
+# Experiment
+log_dir: vit_cifar10
+finetuned: False
+cls_pooling: False
+
+# Data
+dataset_name: "cifar10"
+batch_size: 512
+val_batch_size: 512
+test_batch_size: 512
+
+# Device
+device: cuda:0
+
+# Reproducibility
+seed: 42
+
+# Orchestration
+logging_level: INFO
