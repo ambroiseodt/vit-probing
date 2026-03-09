@@ -1,11 +1,10 @@
 # Vision Transformer Probing (ICLR 2026 CAO Workshop)
-[![arXiv](https://img.shields.io/badge/arXiv-TBD-b31b1b.svg)](https://arxiv.org/abs/TBD)
-[![Dataset](https://img.shields.io/badge/🤗%20Hugging%20Face-Paper-yellow)](https://huggingface.co/papers/TBD)
-[![OpenReview](https://img.shields.io/badge/OpenReview-Forum-8C1515.svg)](https://openreview.net/forum?id=4lT3aScsRJ)
+[![arXiv](https://img.shields.io/badge/arXiv-2603.05280-b31b1b.svg)](https://arxiv.org/abs/2603.05280)
+[![Dataset](https://img.shields.io/badge/🤗%20Hugging%20Face-Paper-yellow)](https://huggingface.co/papers/2603.05280)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
-Official implementation of  [Layer by layer, module by module: Choose both for optimal OOD probing of ViT](https://arxiv.org/pdf/TBD). <br>
+Official implementation of  [Layer by layer, module by module: Choose both for optimal OOD probing of ViT](https://arxiv.org/pdf/2603.05280). <br>
 **Goal**: Analyze the linear probing of hidden representations across modules and layers in vision transformers. <br>
 **Layer by layer**: In ID settings, final layers always yield better performance than intermediate layers. <br>
 **Module by module**: In OOD settings, probing inputs and activations of intermediate feedforwards is better. <br>
@@ -40,7 +39,7 @@ Our codebase was tailored to study the probing of vision transformers under dist
     ┣ 📄optim.py
     ┗ 📄utils.py
 ```
-The ```core``` folder contains essential and generic components related to vision transformers, which can be put together in the ```apps``` folder. In particular, ```apps/vit``` can be used to reproduce the experiments of our [paper](https://arxiv.org/pdf/TBD). 
+The ```core``` folder contains essential and generic components related to vision transformers, which can be put together in the ```apps``` folder. In particular, ```apps/vit``` can be used to reproduce the experiments of our [paper](https://arxiv.org/pdf/2603.05280). 
 
 ## Getting started
 The code runs Python 3.10+. Here are some installation instructions:
@@ -122,7 +121,7 @@ python -m apps.vit.linear_probing config=apps/vit/configs/linear_probing.yaml
 ```
 
 ## Reproducibility
-The experiments of our [paper](https://arxiv.org/pdf/TBD) can be reproduced using the scripts in ```apps/vit/scripts```. Launching them will automatically create dedicated ```tmux``` sessions for each group of experiments. The finetuning experiments should be launched before the linear probing experiments since the latter depend on configuration files obtained after the finetuning runs such as the configuration files of finetuned models. After launching those scripts, the linear probing and finetuning performance can be recovered in a folder ```results/``` by running the following command from the root of the repository:
+The experiments of our [paper](https://arxiv.org/pdf/2603.05280) can be reproduced using the scripts in ```apps/vit/scripts```. Launching them will automatically create dedicated ```tmux``` sessions for each group of experiments. The finetuning experiments should be launched before the linear probing experiments since the latter depend on configuration files obtained after the finetuning runs such as the configuration files of finetuned models. After launching those scripts, the linear probing and finetuning performance can be recovered in a folder ```results/``` by running the following command from the root of the repository:
 ```bash
 python -m apps.plots.finetuning csv
 ```
