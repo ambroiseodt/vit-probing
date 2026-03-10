@@ -9,6 +9,7 @@ Official implementation of  [Layer by layer, module by module: Choose both for o
 **Layer by layer**: In ID settings, final layers always yield better performance than intermediate layers. <br>
 **Module by module**: In OOD settings, probing inputs and activations of intermediate feedforwards is better. <br>
 
+## News
 ### [February 28, 2026] - Layer by layer, module by module is [accepted](https://openreview.net/forum?id=4lT3aScsRJ) at ICLR 2026 [Workshop CAO](https://sites.google.com/view/iclr-2026-workshop-cao/)!
 
 ## Abstract
