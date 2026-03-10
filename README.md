@@ -1,4 +1,4 @@
-# Vision Transformer Probing (ICLR 2026 CAO Workshop)
+# Vision Transformer Probing 
 [![arXiv](https://img.shields.io/badge/arXiv-2603.05280-b31b1b.svg)](https://arxiv.org/abs/2603.05280)
 [![Dataset](https://img.shields.io/badge/🤗%20Hugging%20Face-Paper-yellow)](https://huggingface.co/papers/2603.05280)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -8,6 +8,8 @@ Official implementation of  [Layer by layer, module by module: Choose both for o
 **Goal**: Analyze the linear probing of hidden representations across modules and layers in vision transformers. <br>
 **Layer by layer**: In ID settings, final layers always yield better performance than intermediate layers. <br>
 **Module by module**: In OOD settings, probing inputs and activations of intermediate feedforwards is better. <br>
+
+### [February 28, 2026] - Layer by layer, module by module is [accepted](https://openreview.net/forum?id=4lT3aScsRJ) at ICLR 2026 [Workshop CAO](https://sites.google.com/view/iclr-2026-workshop-cao/)!
 
 ## Abstract
 > Recent studies have observed that intermediate layers of foundation models often yield more discriminative representations than the final layer. While initially attributed to autoregressive pretraining, this phenomenon has also been identified in models trained via supervised and discriminative self-supervised objectives. In this paper, we conduct a comprehensive study to analyze the behavior of intermediate layers in pretrained vision transformers. Through extensive linear probing experiments across a diverse set of image classification benchmarks, we find that distribution shift between pretraining and downstream data is the primary cause of performance degradation in deeper layers. Furthermore, we perform a fine-grained analysis at the level of modules. Our findings reveal that standard probing of transformer block outputs is suboptimal; instead, probing the activation within the feedforward network yields the best performance under significant distribution shift, whereas the normalized output of the multi-head self-attention module is optimal when the shift is weak.
